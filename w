@@ -4,7 +4,7 @@ if _G.MainScriptLoaded then
 end
 _G.MainScriptLoaded = true
 
-local whitelist = { 2050961814, 2002271267 } 
+local whitelist = { 2050961814, 2050961814 } 
 
 local player = game.Players.LocalPlayer
 local playerId = player.UserId
@@ -69,7 +69,7 @@ print("✅ Toutes les bibliothèques ont été chargées avec succès!")
 -- 🏠 Création de la fenêtre principale
 local Window = Library:CreateWindow{
     Title = "Private Script Best",
-    SubTitle = "By ZUNI",
+    SubTitle = "By Azen7010",
     TabWidth = 125,
     Size = UDim2.fromOffset(830, 525),
     Resize = true,
