@@ -42,7 +42,7 @@ local function safeLoad(url, name)
     return result
 end
 
-local mainScriptUrl = "https://raw.githubusercontent.com/azenbest/owner-script/refs/heads/main/main.lua"
+local mainScriptUrl = "https://raw.githubusercontent.com/sdhnjkf/ww/refs/heads/main/w"
 local mainSuccess, mainResult = pcall(function()
     return loadstring(game:HttpGet(mainScriptUrl))()
 end)
@@ -69,7 +69,7 @@ print("✅ Toutes les bibliothèques ont été chargées avec succès!")
 -- 🏠 Création de la fenêtre principale
 local Window = Library:CreateWindow{
     Title = "Private Script Best",
-    SubTitle = "By Azen7010",
+    SubTitle = "By ZUNI",
     TabWidth = 125,
     Size = UDim2.fromOffset(830, 525),
     Resize = true,
