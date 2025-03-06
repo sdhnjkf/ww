@@ -42,7 +42,7 @@ local function safeLoad(url, name)
     return result
 end
 
-local mainScriptUrl = "https://raw.githubusercontent.com/sdhnjkf/ww/refs/heads/main/w"
+local mainScriptUrl = "https://raw.githubusercontent.com/azenbest/owner-script/refs/heads/main/main.lua"
 local mainSuccess, mainResult = pcall(function()
     return loadstring(game:HttpGet(mainScriptUrl))()
 end)
@@ -55,9 +55,9 @@ end
 
 print("✅ Script principal chargé avec succès!")
 
-local Library = safeLoad("https://raw.githubusercontent.com/sdhnjkf/www/refs/heads/main/w", "Fluent.lua")
-local SaveManager = safeLoad("https://raw.githubusercontent.com/sdhnjkf/mainscpt/refs/heads/main/ww", "SaveManager.luau")
-local InterfaceManager = safeLoad("https://raw.githubusercontent.com/sdhnjkf/save/refs/heads/main/save", "InterfaceManager.luau")
+local Library = safeLoad("https://raw.githubusercontent.com/azenbest/Fluent-Renewed/main/Fluent.lua", "Fluent.lua")
+local SaveManager = safeLoad("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau", "SaveManager.luau")
+local InterfaceManager = safeLoad("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau", "InterfaceManager.luau")
 
 if not (Library and SaveManager and InterfaceManager) then
     warn("❌ Une ou plusieurs bibliothèques n'ont pas pu être chargées. Arrêt du script.")
@@ -77,6 +77,7 @@ local Window = Library:CreateWindow{
     Acrylic = true,
     Theme = "VSC Dark High Contrast",
     MinimizeKey = Enum.KeyCode.RightControl
+    }
 local Tabs = {
 	Main = Window:CreateTab{
 		Title = "Main",
