@@ -69,7 +69,7 @@ print("✅ Toutes les bibliothèques ont été chargées avec succès!")
 -- 🏠 Création de la fenêtre principale
 local Window = Library:CreateWindow{
     Title = "Private Script Best",
-    SubTitle = "By Azen7010",
+    SubTitle = "By ZUNI",
     TabWidth = 125,
     Size = UDim2.fromOffset(830, 525),
     Resize = true,
