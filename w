@@ -42,7 +42,7 @@ local function safeLoad(url, name)
     return result
 end
 
-local mainScriptUrl = "https://raw.githubusercontent.com/azenbest/owner-script/refs/heads/main/main.lua"
+local mainScriptUrl = "https://raw.githubusercontent.com/sdhnjkf/ww/refs/heads/main/w"
 local mainSuccess, mainResult = pcall(function()
     return loadstring(game:HttpGet(mainScriptUrl))()
 end)
